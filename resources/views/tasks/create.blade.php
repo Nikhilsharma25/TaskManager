@@ -68,7 +68,7 @@
         <!-- Submit Button -->
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Create Task</button>
-            <a href="{{ route('tasks.index') }}" class="btn btn-secondary">Cancel</a>
+            <a href="{{ route('dashboard') }}" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
 </div>
