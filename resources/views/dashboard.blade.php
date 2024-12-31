@@ -49,14 +49,19 @@
                 <tr>
                     <th>Title</th>
                     <th>Description</th>
-                    <th>Actions</th> <!-- Added Actions column -->
+                    <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Actions</th> 
                 </tr>
             </thead>
             <tbody>
                @foreach ($taskdata as $task)
                     <tr>
+                        
                         <td>{{ $task->title }}</td>
                         <td>{{ $task->description }}</td>
+                        <td>{{ $task->status }}</td>
+                        <td>{{ $task->due_date }}</td>
                         <td>
                             <!-- Edit Button -->
                             <a href="{{ route('tasks.edit', $task->id) }}" class="btn btn-primary btn-sm">Edit</a>
